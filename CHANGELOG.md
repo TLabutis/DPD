@@ -228,3 +228,5 @@
 - Added a "Maximum weight of a single product" shipment setting that hides DPD carriers at checkout when any product in the cart is heavier than the limit
 - Fixed slow back office order page, checkout pickup point step and pickup point re-import on shops with many imported countries, caused by missing pickup point table indexes on installs and resets since 3.2.22
 - Fixed the ZIP import leaving every file from the uploaded ZIP in the module folder; only the expected CSV files are now extracted to a private temp folder and deleted after the import, and the update removes files left by older versions
+- Fixed pick-up point import reporting any server error as "this country has many pick-up points", which hid the real failure
+- Fixed the suggested cron command to target the selected country instead of updating every country
