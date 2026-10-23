@@ -231,3 +231,6 @@
 - Fixed pick-up point import reporting any server error as "this country has many pick-up points", which hid the real failure
 - Fixed the suggested cron command to target the selected country instead of updating every country
 - Fixed module checkout CSS overriding theme focus styles on personal information and address form fields
+- Improved shipment creation error message to be a clear, readable sentence
+- Improved DPD API authentication error to explain that the API credentials in Basic Settings were rejected
+- Fixed shipment creation error messages not being translated to the shop language
